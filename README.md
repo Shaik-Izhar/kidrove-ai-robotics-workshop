@@ -3,7 +3,7 @@
 A modern, responsive workshop landing page built with **React, TypeScript, Tailwind CSS, Express.js, and MongoDB**.
 
 This project was created as part of a Frontend + Backend assessment and showcases a complete workshop registration flow, from a polished user interface to a functional backend API.
-## Live link : [Live](https://your-frontend-url.onrender.com)
+## Live link : (https://kidrove-workshop-frontend.onrender.com)
 ---
 
 ## 🚀 Features
