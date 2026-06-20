@@ -35,12 +35,12 @@ export default function RegistrationForm() {
   const { register, handleSubmit, reset, formState: { errors } } = useForm<FormData>({
     resolver: zodResolver(schema),
   });
-
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
   const onSubmit = async (data: FormData) => {
     setLoading(true);
     setServerErr(null);
     try {
-      const res    = await fetch('/api/enquiry', {
+      const res = await fetch(`${API_URL}/api/enquiry`, {
         method:  'POST',
         headers: { 'Content-Type': 'application/json' },
         body:    JSON.stringify(data),
